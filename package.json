@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "start": "sass src/scss:public/styles",
+        "sass:dev": "sass --watch src/scss:public/styles",
+        "sass:prod": "sass --no-source-map  --style compressed src/scss:public/styles"
+    },
+    "devDependencies": {
+        "sass": "^1.70.0"
+    }
+}

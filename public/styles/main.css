@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: tomato;
+  font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+
+@keyframes animate {
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  0%, 100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Courier New", "Courier", sans-serif;
+  background: linear-gradient(to top right, #43389f 0%, #4ec6ca 100%);
+  animation: animate infinite 10s ease;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center .number {
+  display: flex;
+  height: 100px;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+.center .number i:nth-child(1) {
+  position: relative;
+  height: 100%;
+  width: 24px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+}
+.center .number i:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 20px;
+  z-index: -1;
+  background: #fff;
+  border-radius: 3px;
+  transform-origin: 0 0;
+  transform: rotate(50deg) translateY(-2px) translateZ(-1px);
+}
+.center .number i:nth-child(n+2) {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 24px solid #fff;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+.center p:nth-child(2) {
+  margin: 0;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-size: 82px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 60px;
+}
+.center p:nth-child(3) {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
